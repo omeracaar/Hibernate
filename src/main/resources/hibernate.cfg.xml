@@ -34,6 +34,18 @@
 
         <property name="format_sql">true</property>
 
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.use_query_cache">true</property>
+
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.jcache.internal.JCacheRegionFactory</property>
+        <property name="hibernate.javax.cache.provider">org.ehcache.jsr107.EhcacheCachingProvider</property>
+
+
+<!--addAnotatedClass methodu yerine mapleme yapabiliriz
+        <mapping class="com.hb09.fetchtypes.Student09"/>
+        <mapping class="com.hb09.fetchtypes.Book09"/>
+         -->
+
 
     </session-factory>
 
